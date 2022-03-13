@@ -32,7 +32,7 @@ function App() {
             placeholder='Enter Location'
             type="text" />
         </div>
-        <Top className='top' data={data} />
+        {data.name !== undefined && <Top className='top' data={data} />}
         {data.name !== undefined && <Bottom className='bottom' data={data} />}
       </div>
     </div>
